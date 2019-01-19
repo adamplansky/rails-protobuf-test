@@ -1,15 +1,21 @@
-       user     system      total        real
-400x iterating array with 1002 elements
-protobuf:
- avg_response: 0.04897221250000002
-  2.010256   0.232223   2.242479 ( 22.797006)
-json:
- avg_response: 0.8778984349999999
-  4.057779   0.279861   4.337640 (356.279117)
-protobuf:
-iterating 10000x single object "{\"id\":1,\"name\":\"Adam\",\"bio\":\"bio\",\"genre\":\"muz\"}"
- avg_response: 0.002843990499999996
-  8.843685   4.616317  13.460002 ( 60.095200)
-json:
- avg_response: 0.003615276400000012
-  8.765831   4.442001  13.207832 ( 66.861948)
+
+
+                       400x iterating array with 1002 objects
+             single object "{\"id\":1,\"name\":\"Adam\",\"bio\":\"bio\",\"genre\":\"muz\"}"
+                            
+                  user     system      total        real
+protobuf:       2.010256   0.232223   2.242479 ( 22.797006)  avg_response: 0.04897221250000002
+
+                 user     system      total        real
+json:           4.057779   0.279861   4.337640 (356.279117)  avg_response: 0.8778984349999999
+
+
+---------------------------------------------------------------------------------------------
+
+  iterating 10000x with single object "{\"id\":1,\"name\":\"Adam\",\"bio\":\"bio\",\"genre\":\"muz\"}"
+  
+                 user     system      total        real
+protobuf:      8.843685   4.616317  13.460002 ( 60.095200)  avg_response: 0.002843990499999996
+
+                 user     system      total        real
+json:         8.765831   4.442001  13.207832 ( 66.861948)  avg_response: 0.003615276400000012
