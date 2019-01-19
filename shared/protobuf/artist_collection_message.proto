@@ -1,0 +1,8 @@
+// shared/protobuf/artist_collection_message.proto
+
+syntax = "proto3";  
+import "artist_message.proto";
+
+message ArtistCollectionMessage {  
+  repeated ArtistMessage artists = 1;
+}

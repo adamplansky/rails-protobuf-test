@@ -1,0 +1,11 @@
+// shared/protobuf/artist_message.proto
+
+syntax = "proto3";
+
+message ArtistMessage {
+  int32  id    = 1;
+  string name  = 2;
+  string bio   = 3;
+  string genre = 4;
+}
+  
